@@ -1,0 +1,14 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "Gcam",
+	owner: "realme",
+	apk: "app/Gcam.apk",
+	overrides: ["Camera2","GCamGOPrebuilt","GCamGOPrebuilt-V2","Snap","Camera","SnapCamera"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
